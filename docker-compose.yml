@@ -1,0 +1,10 @@
+version: "3.1"
+services:
+  github_responder:
+    ports:
+      - 8080:8080
+    image: alexellis2/github-secret-integration
+
+secrets:
+  github_webhook:
+    file: ./github_webhook.secret 
