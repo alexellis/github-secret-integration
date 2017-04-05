@@ -4,6 +4,8 @@ services:
     ports:
       - 8080:4567
     image: alexellis2/github-secret-integration
+    secrets:
+        - github_webhook
 
 secrets:
   github_webhook:
